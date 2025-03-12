@@ -20,11 +20,10 @@ func reverse(str string) (result string) {
 func isPalindrome(x int) bool {
     xStr := toStr(x)
 	xRev := reverse(xStr)
-	// fmt.Println(xStr == xRev)
 	return xStr == xRev
 }
 
 func main(){
 	isPalindrome(121)
-	fmt.Println(isPalindrome(121))
+	fmt.Println("answer to the first example is:",isPalindrome(121))
 }

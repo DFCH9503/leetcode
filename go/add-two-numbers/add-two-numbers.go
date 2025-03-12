@@ -36,5 +36,5 @@ func main() {
 		&ListNode{Val: 5, Next: &ListNode{Val: 6, Next: &ListNode{Val: 4, Next: &ListNode{}}}},
 	)
 
-	fmt.Println(res.Val, res.Next.Val, res.Next.Next.Val)
+	fmt.Println("answer to the first example is:", res.Val, res.Next.Val, res.Next.Next.Val)
 }

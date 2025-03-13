@@ -24,9 +24,5 @@ func longestCommonPrefix(strs []string) string {
 
 func main(){
 	array := []string{"flow", "flower", "flight"}
-	sort.Strings(array)
-	fmt.Println(array)
-	first, last := array[0], array[len(array)-1]
-	fmt.Println(first, last, len(last))
-	fmt.Println(longestCommonPrefix(array))
+	fmt.Println("answer to the first example is:",longestCommonPrefix(array))
 }

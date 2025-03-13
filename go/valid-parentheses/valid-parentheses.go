@@ -10,20 +10,19 @@ func isValid(s string) bool {
     
     for _, char := range s {
         if match, found := hash[char]; found {
-            // Check if stack is non-empty and matches
             if len(stack) > 0 && stack[len(stack)-1] == match {
-                stack = stack[:len(stack)-1] // Pop
+                stack = stack[:len(stack)-1]
             } else {
-                return false // Invalid
+                return false
             }
         } else {
-            stack = append(stack, char) // Push opening bracket
+            stack = append(stack, char)
         }
     }
-    return len(stack) == 0 // Valid if stack is empty
+    return len(stack) == 0 
 }
 
 func main(){
 	input := "()"
-	fmt.Println(isValid(input))
+	fmt.Println("answer to the first example is:",isValid(input))
 }

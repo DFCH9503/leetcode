@@ -19,5 +19,5 @@ func romanToInt(s string) int {
 }
 
 func main(){
-	fmt.Println(romanToInt("MCMXCIV"))
+	fmt.Println("answer to the first example is:",romanToInt("III"))
 }

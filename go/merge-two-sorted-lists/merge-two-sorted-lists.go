@@ -37,11 +37,12 @@ func main(){
 	list1 := ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{}}}}
 
 	list2 := ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{}}}}
-	
+
 	list1Pointer := &list1
 	list2Pointer := &list2
 
-	fmt.Println(list1, list1Pointer)
-	fmt.Println(list2, list2Pointer)
-	fmt.Println(mergeTwoLists(list1Pointer, list2Pointer))
+	res := mergeTwoLists(list1Pointer, list2Pointer)
+
+
+	fmt.Println("answer to the first example is:", res.Val, res.Next.Val, res.Next.Next.Val, res.Next.Next.Next.Val, res.Next.Next.Next.Next.Val, res.Next.Next.Next.Next.Next.Val, res.Next.Next.Next.Next.Next.Next.Val)
 }
